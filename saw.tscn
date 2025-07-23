@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cof3bp1yywubx"]
+
+[ext_resource type="Texture2D" uid="uid://dmlwuuplpnk5y" path="res://Saw.png" id="1_bariu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wrtyb"]
+radius = 72.0
+
+[node name="saw" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.39, 0.39)
+texture = ExtResource("1_bariu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wrtyb")

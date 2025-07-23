@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bhv520ot8h7vl"]
+
+[node name="GameOver" type="CanvasLayer"]
+
+[node name="Button" type="Button" parent="."]
+z_index = 1
+offset_left = 451.0
+offset_top = 296.5
+offset_right = 701.0
+offset_bottom = 351.5
+theme_override_font_sizes/font_size = 40
+text = "RESTART"
