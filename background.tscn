@@ -9,37 +9,46 @@
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -2
 texture = ExtResource("1_5nvo1")
 centered = false
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+z_index = -1
 motion_scale = Vector2(0.6, 1)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+z_index = -1
 texture = ExtResource("2_ucfe6")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+z_index = -1
 motion_scale = Vector2(0.7, 1)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+z_index = -1
 texture = ExtResource("3_csq2a")
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+z_index = -1
 motion_scale = Vector2(0.8, 1)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+z_index = -1
 texture = ExtResource("4_ece1e")
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+z_index = -1
 motion_scale = Vector2(0.9, 1)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+z_index = -1
 texture = ExtResource("5_tsuoq")
 centered = false

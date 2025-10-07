@@ -6,6 +6,7 @@
 size = Vector2(2304, 96)
 
 [node name="ground" type="StaticBody2D"]
+z_index = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 552)

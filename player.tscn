@@ -103,7 +103,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"duck",
-"speed": 5.0
+"speed": 25.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -120,7 +120,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
+"speed": 25.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -128,7 +128,12 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 10.0
+"speed": 25.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -185,10 +190,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfxxw"]
-size = Vector2(17.125, 26.125)
+size = Vector2(17.125, 22.0625)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_axmt4"]
-size = Vector2(17, 22)
+size = Vector2(18, 14)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 1
@@ -197,19 +202,17 @@ script = ExtResource("1_ts3yu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(0, -11)
+position = Vector2(-5, -3)
 sprite_frames = SubResource("SpriteFrames_o2s5s")
 animation = &"run"
 autoplay = "idle"
-frame = 3
-frame_progress = 0.73792
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5625, -8.0625)
+position = Vector2(-5, -6.03125)
 shape = SubResource("RectangleShape2D_rfxxw")
 
 [node name="DuckCol" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -6)
+position = Vector2(-5, -2)
 shape = SubResource("RectangleShape2D_axmt4")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
